@@ -37,6 +37,7 @@ namespace Ombi.Core.SettingModels
         public bool Enable { get; set; }
         public bool AdvancedSearch { get; set; }
         public bool EnableTvEpisodeSearching { get; set; }
+        public string Language { get; set; }
 
         public string PlexAuthToken { get; set; }
         public string MachineIdentifier { get; set; }

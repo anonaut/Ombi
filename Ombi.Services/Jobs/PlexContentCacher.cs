@@ -379,10 +379,13 @@ namespace Ombi.Services.Jobs
             {
                 foreach (var dir in sections.Directories ?? new List<Directory>())
                 {
-                    var lib = PlexApi.GetLibrary(plexSettings.PlexAuthToken, plexSettings.FullUri, dir.Key);
-                    if (lib != null)
+                    if (dir.language == plexSettings.Language)
                     {
-                        libs.Add(lib);
+                        var lib = PlexApi.GetLibrary(plexSettings.PlexAuthToken, plexSettings.FullUri, dir.Key);
+                        if (lib != null)
+                        {
+                            libs.Add(lib);
+                        }
                     }
                 }
             }

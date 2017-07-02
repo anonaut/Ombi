@@ -91,6 +91,13 @@
             </div>
 
             <div class="form-group">
+                <label for="Language" class="control-label">Library Language Filter</label>
+                <div>
+                    <input type="text" class="form-control form-control-custom " id="Language" name="Language" value="@Model.Language">
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label for="authToken" class="control-label">Plex Authorization Token</label>
                 <div class="">
                     <input type="text" class="form-control-custom form-control" id="authToken" name="PlexAuthToken" placeholder="Plex Auth Token" value="@Model.PlexAuthToken">

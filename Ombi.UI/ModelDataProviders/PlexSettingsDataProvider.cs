@@ -48,6 +48,7 @@ namespace Ombi.UI.ModelDataProviders
                     with.Property(x => x.FullUri).Description("Internal Property").Required(false);
 
                     with.Property(x => x.SubDir).Description("Subdir/BaseUrl of Plex").Required(false);
+                    with.Property(x => x.Language).Description("Only scan for movies in set lanugage").Default("en");
                 });
         }
     }

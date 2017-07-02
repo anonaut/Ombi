@@ -14,6 +14,8 @@ namespace Ombi.Api.Models.Plex
         public string Title { get; set; }
         [XmlAttribute(AttributeName = "type")]
         public string type { get; set; }
+        [XmlAttribute(AttributeName = "language")]
+        public string language { get; set; }
     }
 
     [XmlRoot(ElementName = "MediaContainer")]
